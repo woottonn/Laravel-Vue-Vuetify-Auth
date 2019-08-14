@@ -19,12 +19,11 @@
 <body>
     <v-app id="app">
         
-        <main-navigation></main-navigation>
+    <main-navigation auth="{{ auth()->check() }}"></main-navigation>
         
         <v-content>
           <v-container fluid>
-            <!-- If using vue-router <router-view></router-view>-->
-            <h1 class="subheading">Djamel working</h1>
+            <!-- <router-view></router-view> -->
           </v-container>
         </v-content>
       

@@ -34,7 +34,6 @@ export default {
                 authApi.login(credentials)
                     .then( res => {
                         commit('setLoggedIn', true);
-                        // set the user
                         resolve(res);
                     }).catch( error => {
                         reject(error);
